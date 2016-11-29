@@ -2,7 +2,7 @@
 // @name         Save Inspect
 // @namespace    http://tampermonkey.net/
 // @version      1.0
-// @description  try to take over the world!
+// @description  Reload the page or navigate away and still have inspect element changes.
 // @author       Austin Scott
 // @match        *://*/*
 // @grant        none
