@@ -19,7 +19,7 @@
   // where do we want to have the button to appear?
   // you can append it to another element just by doing something like
   // document.getElementById('foobutton').appendChild(button);
-  document.body.appendChild(button);
+  document.body.insertBefore(button, document.body.firstChild);
 };
     foo();
     function getCookie(cname) {
