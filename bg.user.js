@@ -10,9 +10,17 @@
 
 (function() {
     'use strict';
-    var btn = document.createElement('button');
-    btn.onclick = "var b=prompt('image url');document.cookie = 'imurl='+b;void 0";
-    document.body.appendChild(btn);
+    var foo = function(){
+  var button = document.createElement('button');
+  button.innerHTML = 'click me';
+  button.onclick = function(){
+    var b=prompt('image url');document.cookie = 'imurl='+b;void 0;return false;
+  };
+  // where do we want to have the button to appear?
+  // you can append it to another element just by doing something like
+  // document.getElementById('foobutton').appendChild(button);
+  document.body.appendChild(button);
+};
     function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
