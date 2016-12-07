@@ -10,7 +10,9 @@
 
 (function() {
     'use strict';
-
+    var btn = document.createElement('button');
+    btn.onclick = "var b=prompt('image url');document.cookie = 'imurl='+b;void 0";
+    document.body.appendChild(btn);
     function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
