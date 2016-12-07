@@ -12,7 +12,7 @@
     'use strict';
     var foo = function(){
   var button = document.createElement('button');
-  button.innerHTML = 'click me';
+  button.innerHTML = 'click to change background url.';
   button.onclick = function(){
     var b=prompt('image url');document.cookie = 'imurl='+b;void 0;return false;
   };
