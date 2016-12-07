@@ -21,6 +21,7 @@
   // document.getElementById('foobutton').appendChild(button);
   document.body.appendChild(button);
 };
+    foo();
     function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
